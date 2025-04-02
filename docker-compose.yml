@@ -1,0 +1,10 @@
+services:
+  ares-import-tool:
+    image: ares-import-tool
+    build: .
+    working_dir: /app
+    command: python main.py
+    environment:
+      - ARES_BE5_DIR=${ARES_BE5_DIR} # This loads the value from the .env file
+    volumes:
+      - ${ARES_BE5_DIR}:${ARES_BE5_DIR}
