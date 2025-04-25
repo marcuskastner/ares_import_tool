@@ -5,7 +5,7 @@ import re
 import requests
 from urllib.parse import urlparse
 import sys
-from colorama import init, Fore, Style
+from colorama import init, Fore
 
 # Initialize colorama for Windows compatibility
 init(autoreset=True)

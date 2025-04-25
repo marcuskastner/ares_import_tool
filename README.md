@@ -1,14 +1,17 @@
 # Ares Asset Tool
 
 ## Description
-This tool will efficiently scan your theme wrapper find affiliaite assets such as images and fonts, download them to
-the appropriate directories and change your markup to source these now local assets
+
+This tool efficiently scans your theme twig file, detects affiliate assets such as images and fonts, downloads them to the appropriate directories, and updates your markup to reference these locally stored assets.
 
 ## Setup
-open .env file and add path to your BE5 project
+
+open .env file and add path to your BE5 project. Such as ARES_BE5_DIR=/Users/example/Projects/Frontend/be5
 
 ## Installation
-```docker-compose build```
+
+`docker-compose build`
 
 ## Running App
-```docker-compose run --rm -it ares-import-tool```
+
+`docker-compose run --rm -it ares-import-tool`
